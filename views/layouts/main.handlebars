@@ -13,11 +13,10 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="hero">
-      <h1 class="title">Tech Blog
-       
-        
-      </h1>
+      <h1 class="title">The Tech Blog</h1>
       <nav class="nav">
+        <a href="/login">Home</a>
+       {{!-- <a href="/">Dashboard</a> --}}
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a href="/profile">Dashboard</a> |
@@ -26,8 +25,8 @@
         {{else}}
         <a href="/login">Login</a>
         {{/if}}
-        <a href="/">Dashboard</a>
-       <a href="/login">Home</a>
+        
+       
        
         
       </nav>
