@@ -81,11 +81,11 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 # Walkthrough
 
-### E-Commerce Backend Screenshot
+### Techblog Backend Screenshot
 
 ![Changed HTML](./images/Screenshot.png)
 
-### Walkthrough
+### Screenshot
 
-![Demo of App](./images/techblog.gif)
-![Demo of App](./images/techblogcomment.gif)
+![Demo of App](./images/techblog.png)
+![Demo of App](./images/techblogcomment.png)
