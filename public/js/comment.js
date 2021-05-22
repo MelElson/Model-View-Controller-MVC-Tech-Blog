@@ -1,12 +1,12 @@
 const commentFormHandler = async (event) => {
     event.preventDefault();
-    const comment_title = document.querySelector('#comment_title-comment').value.trim();
-    const description = document.querySelector('#description-comment').value.trim();
-  
-    if (/*name && */comment_title && description) {
-      const response = await fetch('/api/comment', {
+    // const comment_title = document.querySelector('#comment_title-comment').value.trim();
+    const comment_description = document.querySelector('#comment_description').value.trim();
+    const blog_id = document.querySelector('.comment-form').dataset.blogid;
+    if (comment_description && blog_id) {
+      const response = await fetch('/api/comments', {
         method: 'POST',
-        body: JSON.stringify({ /*name, */comment_title, description }),
+        body: JSON.stringify({ comment_description, blog_id }),
         headers: { 'Content-Type': 'application/json' },
       });
   

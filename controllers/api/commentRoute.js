@@ -21,13 +21,13 @@ router.post('/', withAuth, async (req, res) => {
         user_id: req.session.user_id,
       });
   
-      res.status(200).json(commentBlog);
+      res.status(200).json(newComment);
     } catch (err) {
       res.status(400).json(err);
     }
   });
 
- //Update comment 
+  
 
 //delete comment
 router.delete('/:id', withAuth, async (req, res) => {
